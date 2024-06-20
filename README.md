@@ -1,3 +1,5 @@
-Online FoodOrdering Application\\
--Made using Android Studio\\
+Online FoodOrdering Application
+
+-Made using Android Studio
+
 -Self-Learning Project
