@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EatScape</string>
+    <string name="next">Next</string>
+    <string name="enjoy_restaurant_meals_at_your_hostel">Enjoy Restaurant Meals at your Hostel</string>
+    <string name="todo">TODO</string>
+    <string name="facebook">Facebook</string>
+    <string name="get_your_fav_food">Get your Fav Food</string>
+    <string name="eatscape">EatScape</string>
+    <string name="login_to_your_account">Login To Your Account</string>
+    <string name="todo1">TODO</string>
+    <string name="or">or</string>
+    <string name="continue_with">Continue with</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="google">Google</string>
+</resources>
