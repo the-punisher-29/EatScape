@@ -2,14 +2,12 @@ package `in`.sk.eatscape
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import android.widget.ArrayAdapter
 import `in`.sk.eatscape.R
 import androidx.core.view.WindowInsetsCompat
 import `in`.sk.eatscape.databinding.ActivityChooseLocationBinding
-import `in`.sk.eatscape.databinding.ActivityLoginBinding
 
 class ChooseLocationActivity : AppCompatActivity() {
     private lateinit var binding: ActivityChooseLocationBinding
@@ -25,7 +23,6 @@ class ChooseLocationActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, locationList)
         val autoCompleteTextView=binding.listOfLocation
         autoCompleteTextView.setAdapter(adapter)
-        enableEdgeToEdge()
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
