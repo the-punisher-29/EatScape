@@ -1,4 +1,4 @@
-package `in`.sk.eatscape.fragment
+package `in`.sk.eatscape.Fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
