@@ -27,17 +27,21 @@
         android:fontFamily="@font/aclonica"
         android:text="Cart"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
         android:layout_marginBottom="8dp"
-        android:text="Button"
+        android:background="@drawable/proceedbutton"
+        android:fontFamily="@font/aclonica"
+        android:text="Proceed"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

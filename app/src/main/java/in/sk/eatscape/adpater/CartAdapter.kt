@@ -8,7 +8,7 @@ import `in`.sk.eatscape.databinding.CartItemBinding
 class CartAdapter(
     private val cartItems: MutableList<String>,
     private val cartItemPrices: MutableList<String>,
-    private val cartImages: MutableList<Int>
+    private var cartImages: MutableList<Int>
 ) : RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
 
     private val itemQuantities = IntArray(cartItems.size) { 1 } // Initialize quantities to 1
@@ -32,7 +32,42 @@ class CartAdapter(
                 cin.text = cartItemPrices[position]
                 cartImage.setImageResource(cartImages[position])
                 ciq.text = quantity.toString()
+
+                mib.setOnClickListener {
+                    decreaseQuantity(position)
+                }
+                plb.setOnClickListener {
+                    increaseQuantity(position)
+                }
+                tb.setOnClickListener {
+                    val itemPosition = adapterPosition
+                    if (itemPosition != RecyclerView.NO_POSITION) {
+                        deleteItem(itemPosition)
+                    }
+                }
             }
+        }
+
+        private fun increaseQuantity(position: Int) {
+            if (itemQuantities[position] < 10) {
+                itemQuantities[position]++
+                binding.ciq.text = itemQuantities[position].toString()
+            }
+        }
+
+        private fun decreaseQuantity(position: Int) {
+            if (itemQuantities[position] > 1) {
+                itemQuantities[position]--
+                binding.ciq.text = itemQuantities[position].toString()
+            }
+        }
+
+        private fun deleteItem(position: Int) {
+            cartItems.removeAt(position)
+            cartItemPrices.removeAt(position)
+            cartImages.removeAt(position)
+            notifyItemRemoved(position)
+            notifyItemRangeChanged(position, cartItems.size)
         }
     }
 }
