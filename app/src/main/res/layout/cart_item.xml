@@ -60,12 +60,12 @@
                 android:padding="2dp"
                 android:src="@drawable/minus"
                 android:text=""
-                app:layout_constraintBottom_toBottomOf="@+id/cartItemquantity"
-                app:layout_constraintEnd_toStartOf="@+id/cartItemquantity"
-                app:layout_constraintTop_toTopOf="@+id/cartItemquantity" />
+                app:layout_constraintBottom_toBottomOf="@+id/ciq"
+                app:layout_constraintEnd_toStartOf="@+id/ciq"
+                app:layout_constraintTop_toTopOf="@+id/ciq" />
 
             <TextView
-                android:id="@+id/cartItemquantity"
+                android:id="@+id/ciq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"

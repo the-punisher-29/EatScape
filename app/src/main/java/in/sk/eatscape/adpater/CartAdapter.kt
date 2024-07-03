@@ -1,15 +1,14 @@
-package `in`.sk.eatscape.adpater
+package `in`.sk.eatscape.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wavesoffood.databinding.CartItemBinding
+import `in`.sk.eatscape.databinding.CartItemBinding
 
 class CartAdapter(
     private val cartItems: MutableList<String>,
-    private val cartItemPrice: MutableList<String>,
-    private val cartImage: MutableList<Int>
+    private val cartItemPrices: MutableList<String>,
+    private val cartImages: MutableList<Int>
 ) : RecyclerView.Adapter<CartAdapter.CartViewHolder>() {
 
     private val itemQuantities = IntArray(cartItems.size) { 1 } // Initialize quantities to 1
@@ -29,10 +28,10 @@ class CartAdapter(
         fun bind(position: Int) {
             binding.apply {
                 val quantity = itemQuantities[position]
-                cartItems.text = cartItems[position]
-                cartItemPrice.text = cartItemPrice[position]
-                cartImage.setImageResource(cartImage[position])
-                cartItemquantity.text = quantity.toString()
+                cfn.text = cartItems[position]
+                cin.text = cartItemPrices[position]
+                cartImage.setImageResource(cartImages[position])
+                ciq.text = quantity.toString()
             }
         }
     }
