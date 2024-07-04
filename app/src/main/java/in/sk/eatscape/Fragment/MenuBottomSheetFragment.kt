@@ -1,4 +1,4 @@
-package `in`.sk.eatscape
+package `in`.sk.eatscape.Fragment
 
 import android.os.Bundle
 
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import `in`.sk.eatscape.R
 
 import `in`.sk.eatscape.adpater.MenuAdapter
 import `in`.sk.eatscape.databinding.FragmentMenuBottomSheetBinding

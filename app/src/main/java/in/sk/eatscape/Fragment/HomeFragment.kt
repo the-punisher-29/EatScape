@@ -12,7 +12,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import `in`.sk.eatscape.databinding.FragmentHomeBinding
 import com.denzcoskun.imageslider.models.SlideModel
-import `in`.sk.eatscape.MenuBottomSheetFragment
 import `in`.sk.eatscape.adpater.PopularAdapter
 
 class HomeFragment : Fragment() {
