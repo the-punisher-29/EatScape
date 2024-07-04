@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import `in`.sk.eatscape.databinding.FragmentHomeBinding
 import com.denzcoskun.imageslider.models.SlideModel
+import `in`.sk.eatscape.MenuBottomSheetFragment
 import `in`.sk.eatscape.adpater.PopularAdapter
 
 class HomeFragment : Fragment() {
@@ -20,9 +21,14 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment using ViewBinding
         binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding.viewallm.setOnClickListener {
+            val bottomSheetDialog = MenuBottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager, "Test")
+        }
+
         return binding.root
     }
 

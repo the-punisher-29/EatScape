@@ -26,4 +26,8 @@
     <string name="profile">Profile</string>
     <string name="search">Search</string>
     <string name="explore_food_options">Explore Food Options</string>
+    <string name="food_name">Food Name</string>
+    <string name="rs_279">Rs.279</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="menu">Menu\n</string>
 </resources>

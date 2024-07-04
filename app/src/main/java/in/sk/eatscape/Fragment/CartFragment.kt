@@ -21,7 +21,7 @@ class CartFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCartBinding.inflate(inflater, container, false)
 
         val cartFoodName = listOf("Chicken Tikka", "Zaffrani Biryani", "Chicken Tawa Masala", "Mutton Rogan Josh", "Seekh Kabab")
