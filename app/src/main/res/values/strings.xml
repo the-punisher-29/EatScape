@@ -30,4 +30,9 @@
     <string name="rs_279">Rs.279</string>
     <string name="add_to_cart">Add to Cart</string>
     <string name="menu">Menu\n</string>
+    <string name="recent_buy">Recent Buy</string>
+    <string name="foodname">FoodName</string>
+    <string name="rs299">Rs299</string>
+    <string name="previous_orders">Previous Orders</string>
+    <string name="buy_again">Buy Again</string>
 </resources>

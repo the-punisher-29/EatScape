@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
+        android:fontFamily="@font/aclonica"
         android:text="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +48,7 @@
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/aclonica"
         android:layout_height="wrap_content"
         android:text="Menu"
         app:layout_constraintEnd_toEndOf="parent"
