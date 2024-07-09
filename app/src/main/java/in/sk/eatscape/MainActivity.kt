@@ -8,20 +8,30 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import `in`.sk.eatscape.Fragment.Notification_Bottom_Fragment
+import `in`.sk.eatscape.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val navController: NavController = findNavController(R.id.fragmentContainerView2)
         val bottomNav: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNav.setupWithNavController(navController)
 
+        binding.imageView5.setOnClickListener {
+            val bottomSheetDialog = Notification_Bottom_Fragment()
+            bottomSheetDialog.show(supportFragmentManager, "Test")
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+            WindowInsetsCompat.CONSUMED
         }
     }
 }
